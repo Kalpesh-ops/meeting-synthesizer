@@ -28,9 +28,8 @@ If a tool fails or returns an error (like a database connection issue), graceful
 
 # Fallback cascade: Primary -> Fast/Free Lite -> Reliable Pro
 MODELS_TO_TRY = [
-    "gemini-2.5-flash",
-    "gemini-3.1-flash-lite", 
-    "gemini-2.5-pro"
+    "gemini-2.5-flash", 
+    "gemini-pro"
 ]
 
 def process_request(user_prompt: str) -> ChatResponse:
